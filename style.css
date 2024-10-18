@@ -467,14 +467,17 @@ body {
                             position: relative;
                             border-radius: 10px;
                             width: 100%;
-                            height: 5px;
+                            height: 8px;
                             background-color: #012290f7;
                             animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
                             transform: scaleX(0);
                             transform-origin: left;
+                            display: flex;
+                            align-items: center;
+                            justify-content: left;
 
                             span {
-                                height: 100%;
+                                height: 120%;
                                 background-color: #0ef;
                                 position: absolute;
                                 border-radius: 10px;
@@ -485,29 +488,29 @@ body {
                                 &::after {
                                     position: absolute;
                                     padding: 1px 8px;
-                                    background-color: #012290f7;
+                                    /* background-color: #012290f7; */
                                     color: #fff;
                                     font-size: 12px;
-                                    border-radius: 3px;
-                                    top: -28px;
+                                    /* border-radius: 3px; */
+                                    top: 13px;
                                     right: -21px;
                                     animation: showText 0.5s 0.5s linear forwards;
                                     opacity: 0;
                                 }
 
-                                &::before {
-                                    /* content: ""; */
+                                /* &::before {
+                                    content: "";
                                     position: absolute;
                                     padding: 0;
                                     margin: 0;
                                     border: 7px solid transparent;
-                                    border-bottom-width: 0px;
-                                    border-top-color: #012290f7;
-                                    top: -13px;
+                                    border-top-width: 0px;
+                                    border-bottom-color: #012290f7;
+                                    top: 9px;
                                     right: -8px;
                                     animation: showText 0.5s 0.5s linear forwards;
                                     opacity: 0;
-                                }
+                                } */
                             }
                         }
 
@@ -590,7 +593,7 @@ body {
                         }
 
                         .maya span {
-                            width: 5%;
+                            width: 0%;
                         }
 
                         .blender span {
@@ -613,12 +616,12 @@ body {
                             content: "70%";
                         }
 
-                        /* .bootstrap span::after {
+                        .bootstrap span::after {
                             content: "20%";
                         }
 
                         .tailwind span::after {
-                            content: "0%;"
+                            content: "0%";
                         }
 
 
@@ -635,7 +638,7 @@ body {
                         }
 
                         .mongodb span::after {
-                            content: "0%;"
+                            content: "0%";
                         }
 
                         .aws span::after {
@@ -644,7 +647,7 @@ body {
 
                         .ps span::after {
                             content: "65%";
-                        } */
+                        }
 
                         .illustrator span::after {
                             content: "80%";
@@ -654,19 +657,19 @@ body {
                             content: "40%";
                         }
 
-                        /* .corel span::after {
+                        .corel span::after {
                             content: "15%";
                         }
 
                         .is span::after {
-                            content: "0%;"
-                        } */
+                            content: "0%";
+                        }
 
                         .gimp span::after {
                             content: "50%";
                         }
 
-                        /* .figma span::after {
+                        .figma span::after {
                             content: "10%";
                         }
 
@@ -679,11 +682,11 @@ body {
                         }
 
                         .gaea span::after {
-                            content: "5%;"
+                            content: "5%";
                         }
 
                         .maya span::after {
-                            content: "5%;"
+                            content: "0%";
                         }
 
                         .blender span::after {
@@ -691,7 +694,7 @@ body {
                         }
 
                         .c span::after {
-                            content: "0%;"
+                            content: "0%";
                         }
 
                         /* Percentage line end */
@@ -748,7 +751,7 @@ body {
                         width: 160px;
 
                         .path {
-                            stroke-width: 10;
+                            stroke-width: 20;
                             stroke: #0ef;
                             fill: transparent;
                             stroke-dashoffset: 500;
@@ -778,7 +781,7 @@ body {
 
 
                         .progress-bar {
-                            stroke-width: 10;
+                            stroke-width: 15;
                             stroke: #012290f7;
                             fill: transparent;
                             stroke-dasharray: 500;
@@ -830,7 +833,7 @@ body {
 
         .portfolio-content {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(159px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(359px, 1fr));
             padding: 0 10% 70px;
             gap: 30px;
 
@@ -881,30 +884,27 @@ body {
                     transition: height 0.5s;
 
                     h5 {
-                        color: #012290f7;
+                        color: white;
                         font-size: 20px;
                         font-weight: 600;
                         margin-bottom: 15px;
                     }
 
                     p {
-                        color: #012290f7;
                         font-size: 1rem;
                         line-height: 1.8;
+                        color: white;
                     }
-                    
-                    i {
-                        color: #012290f7;
-                        margin-top: 20px;
-                        font-size: 20px;
-                        background: #fff;
-                        width: 40px;
-                        height: 40px;
+
+                    a {
+                        color: white;
                         display: flex;
-                        align-items: center;
+                        flex-direction: row;
                         justify-content: center;
-                        border-radius: 50%;
+                        align-items: center;
+                        text-decoration: none;
                     }
+                
 
                 }
             }
@@ -1022,19 +1022,15 @@ body {
 
 .hire-container {
     margin: 70px 10%;
-    padding-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;;
     border-radius: 10px;
-    box-shadow: 0 0 20px #012290f7, 0  20px inset #012290f7;
 
 
     h1 {
         font-size: 56px;
-        position: relative;
-        top: 11px;
 
         span {
             color: #0ef;
@@ -1053,18 +1049,66 @@ body {
         align-items: center;
         background: var(--colorBlur);
         padding: 40px 0;
-        border-radius: 30px;
+        border-radius: 20px;
+        box-shadow: 0 0 0 #012290f7,  0  30px inset #012290f7;
+        position: relative;
+        top: 50px;
+        padding: 100px 100px 50px 100px;
+        background-color: #07051d;
 
-        p {
-            padding: 5px 0;
+        > div {
+            max-width: 600px;
+            h2 {
+                margin-bottom: 50px;
+            }
 
-            span {
-                font-size: 30px;
-                font-weight: 600;
-                color: var(--primaryColor);
+            h2 + p {
+                margin-bottom: 25px;
+            }
+
+            p {
+                font-size: large;
+            }
+            
+            .icon-p p{
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                align-items: center;
+                margin: 5px 0;
+
+                .bx {
+                    color: #0ef;
+                    font-size: xx-large;
+                    margin-right: 10px;
+                }
+            }
+
+            .contact-sci a {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                height: 40px;
+                background: transparent;
+                border: 2px solid #0ef;
+                border-radius: 50%;
+                font-size: 20px;
+                color: #0ef;
+                text-decoration: none;
+                margin: 10px 10px 10px 0;
+                transition: 0.3s ease;
+                opacity: 0;
+                animation: slideLeft 1s ease forwards;
+                animation-delay: calc(0.2s * var(--i));
+    
+                &:hover {
+                    color: var(--bgcolor);
+                    background: #0ef;
+                    box-shadow: 0 0 20px #0ef;
+                }
             }
         }
-
         button {
             outline: none;
             padding: 8px 20px;
@@ -1073,7 +1117,6 @@ body {
             border-radius: 20px;
             color: #0b0829;
             margin-top: 20px;
-            box-shadow: 0 0 20px var(--primaryColor);
             font-weight: 600 !important;
             transition: 0.6s ease;
             &:hover {
@@ -1110,11 +1153,11 @@ body {
                 background: none;
                 border: 1px solid #012290f7;
                 border-radius: 6px;
-                color: var(--colorWhite);
+                color: white;
+            }
 
-                &::placeholder {
-                    color: var(--placeholder);
-                }
+            .textarea {
+                height: 100px;
             }
 
             button {
@@ -1128,9 +1171,7 @@ body {
 
 
 footer {
-    background: var(--colorBlur);
     text-align: center;
-    color: var(--colorWhite);
     padding: 20px 0;
     font-weight: 500;
 }
